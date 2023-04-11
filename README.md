@@ -37,3 +37,58 @@ Alright, the main event and what this template is made for. If you're running un
 If you don't know how to setup a database in mySQL, it sounds scarier than it is. First, download a mariaDB or mySQL image from Community Applications. After you've done that, click on the container image and hit console: 
 
 ![console link on container click](accessing-console.png "Console link")
+
+You should be presented with a terminal pop-up browser window. If not, make sure to allow popups from your server's domain name. 
+
+##### Logging In
+
+You'll first need to login to mysql as root, using the password you made when you generated the mySQL template, as so: 
+
+```
+mysql -u root -p
+Enter password:
+```
+Once you paste/type in your password, you should see this: 
+
+```
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.32 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+```
+
+##### Creating the User
+
+Now we can create the user (uvdesk by default): 
+`CREATE USER 'uvdesk'@'localhost' IDENTIFIED BY 'SUPERSECUREPASSWORDHERE';`
+
+You should see this output:
+`Query OK, 0 rows affected (0.01 sec)`
+
+##### Creating the Database
+
+Now we create the database (uvdesk by default):
+`CREATE DATABASE `uvdesk`;
+
+Once again, you should see this output:
+`Query OK, 1 rows affected (0.01 sec)`
+
+##### Granting User Privileges on Database
+
+Lastly, we need to give our `uvdesk` user all privileges on the uvdesk database: 
+
+`GRANT ALL PRIVILEGES ON uvdesk.* TO 'uvdesk'@'localhost' IDENTIFIED BY 'SUPERSECUREPASSWORDHERE';`
+
+Once last time, you should see this output:
+`Query OK, 1 rows affected (0.01 sec)`
+
+You've now done all the work you'll need to do in mySQL, you can exit the pop-up window or leave by typing `exit`. 
