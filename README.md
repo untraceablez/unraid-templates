@@ -36,4 +36,4 @@ Alright, the main event and what this template is made for. If you're running un
 
 If you don't know how to setup a database in mySQL, it sounds scarier than it is. First, download a mariaDB or mySQL image from Community Applications. After you've done that, click on the container image and hit console: 
 
-![console link on container click](https://github.com/untraceablez/uvdesk-unraid/blob/main/accessing-console.png "Console link")
+![console link on container click](accessing-console.png "Console link")
