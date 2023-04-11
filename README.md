@@ -78,7 +78,7 @@ You should see this output:
 ##### Creating the Database
 
 Now we create the database (uvdesk by default):
-`CREATE DATABASE `uvdesk`;
+`CREATE DATABASE 'uvdesk'`;
 
 Once again, you should see this output:
 `Query OK, 1 rows affected (0.01 sec)`
