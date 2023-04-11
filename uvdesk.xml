@@ -7,22 +7,23 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/untraceablez/unraid-templates/issues</Support>
+  <Support>https://github.com/untraceablez/uvdesk-unraid/issues</Support>
   <Project>https://github.com/uvdesk/community-skeleton/</Project>
   <Overview>UVDesk - An Open Source Helpdesk.&#xD;
 &#xD;
-UVDesk is an open source helpdesk solution that can be self-hosted, allowing you to manage family and friends' IT problems with a helpdesk like you would in an IT career. It's also a great tool for learning how to work with a ticket system as it's simpler than industry standards like ServiceNow and Jira. &#xD;
+UVDesk is an open source helpdesk solution that can be self-hosted, allowing you to manage family and friends' IT problems with a helpdesk like you would in an IT career. If you are wanting to use UVDesk for business use, you should support the developers by contacting them on their website and looking at pricing options.&#xD;
 &#xD;
 Website: https://www.uvdesk.com/en/&#xD;
-Project GitHub: https://github.com/uvdesk/community-skeleton</Overview>
-  <Category>Productivity: Tools:</Category>
+Original Project GitHub: https://github.com/uvdesk/community-skeleton/&#xD;
+Template GitHub: https://github.com/untraceablez/uvdesk-unraid/</Overview>
+  <Category>Productivity: Tools: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT]</WebUI>
   <TemplateURL/>
   <Icon>https://yt3.googleusercontent.com/ytc/AL5GRJUffl2H80R11YincESU0WpqXTBIHekmY_B6cRN6Ng=s900-c-k-c0x00ffffff-no-rj</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1681227795</DateInstalled>
+  <DateInstalled>1681232472</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -35,4 +36,8 @@ Project GitHub: https://github.com/uvdesk/community-skeleton</Overview>
   <Config Name="mySQL Password" Target="MYSQL_PASSWORD" Default="whateveryoumadethepassworddude" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">ue4KhgtnjCTQrEaB8@JxUfQ9</Config>
   <Config Name="mySQL Root Password" Target="MYSQL_ROOT_PASSWORD" Default="yourmysqlrootpassword" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">GCCXXfVo8ocbAAQB</Config>
   <Config Name="Server FQDN" Target="ServerName" Default="https://youripordomainname.here" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://help.smaugstrove.live</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="dev" Mode="" Description="Puts app in development or production mode." Type="Variable" Display="always" Required="false" Mask="false">dev</Config>
+  <Config Name="APP_SECRET" Target="APP_SECRET" Default="36d362127cb3e4d4982ce4cf6b716ddc53c5299c" Mode="" Description="The App Secret, set this to any random string, personally I like to hash a phrase into SHA1 and use that." Type="Variable" Display="always" Required="false" Mask="false">36d362127cb3e4d4982ce4cf6b716ddc53c5299c</Config>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Your timezone." Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+  <Config Name="App Currency" Target="APP_CURRENCY" Default="USD" Mode="" Description="Currency value to use if you plan on CMS support." Type="Variable" Display="always" Required="false" Mask="false">USD</Config>
 </Container>
