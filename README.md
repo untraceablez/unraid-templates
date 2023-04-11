@@ -129,4 +129,8 @@ You've now done all the work you'll need to do in mySQL, you can exit the pop-up
 
 #### Accessing UVDesk &  First-Time Setup
 
+
+
 ## Acknowledgements
+
+Thanks to @MountainGod on the IBRACORP Discord for some help with the environment flags. 
