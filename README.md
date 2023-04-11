@@ -1,5 +1,24 @@
 # uvdesk-unraid
 
+## Table of Contents
+
+ * [What is UVDesk?](#what-is-uvdesk)
+ * [Self-Hosting](#self-hosting)
+    * [Docker Run / Docker Compose](#docker-run--docker-compose)
+    * [Non-Docker Setup](#non-docker-setup)
+    * [unRAID](#unraid)
+        * [unRAID Requirements](#unraid-requirements)
+        * [Reverse Proxy](#reverse-proxy)
+        * [Setting up the Database](#setting-up-the-database)
+            * [Logging into mySQL](#logging-in)
+            * [Creating the User](#creating-the-user)
+            * [Creating the Database](#creating-the-database)
+            * [Granting Privileges](#granting-user-privileges-on-database)
+        * [Install uvdesk from Community Applications](#installing-uvdesk-from-community-applications)
+    * [Accessing UVDesk &  First-Time Setup](#accessing-uvdesk--first-time-setup)
+* [Acknowledgements](#acknowledgements)
+
+
 ## What is UVDesk?
 
 [**UVDesk**](https://www.uvdesk.com/en/) is a open source helpdesk software solution. It has support for a multitude of features including the following: 
@@ -31,6 +50,18 @@ Alright, the main event and what this template is made for. If you're running un
 * You will need to have a **local** mySQL or MariaDB instance running on the same docker network as uvdesk. 
     * You will need to create a `uvdesk` database and `uvdesk` user with full privileges on that database *prior* to downloading uvdesk from Community Applications. Please refer to [Setting up the Database](#setting-up-the-database) for instructions.
 * You will need a reverse proxy setup. 
+
+#### Reverse-Proxy
+
+Setting up a reverse proxy is a task all unto itself, and best left to better authors than I: 
+
+* IBRACORP NGINX Proxy Manager Guide: <https://youtu.be/h1a4u72o-64>
+* IBRACORP NGINX Proxy Manager **with Cloudflare** Guide: <https://www.youtube.com/watch?v=c6Y6M8CdcQ0>
+* Spaceinvaderone's Reverse Proxy Guide (SWAG): <https://youtu.be/I0lhZc25Sro>
+
+There are other guides, but these are all unRAID specific and should get you what you need to setup a reverse proxy. Note, the reverse proxy **must be setup prior to installing uvdesk**.
+
+
 
 #### Setting up the Database
 
@@ -93,3 +124,9 @@ Once last time, you should see this output:
 `Query OK, 1 rows affected (0.01 sec)`
 
 You've now done all the work you'll need to do in mySQL, you can exit the pop-up window or leave by typing `exit`. 
+
+#### Installing uvdesk from Community Applications
+
+#### Accessing UVDesk &  First-Time Setup
+
+## Acknowledgements
