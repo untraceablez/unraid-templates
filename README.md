@@ -72,7 +72,7 @@ Now we can create the user (uvdesk by default):
 
 `CREATE USER 'uvdesk'@'localhost' IDENTIFIED BY 'SUPERSECUREPASSWORDHERE';`
 
-You should see this output:
+You should see this output:  
 `Query OK, 0 rows affected (0.01 sec)`
 
 ##### Creating the Database
