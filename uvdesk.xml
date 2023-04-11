@@ -16,7 +16,7 @@ UVDesk is an open source helpdesk solution that can be self-hosted, allowing you
 Website: https://www.uvdesk.com/en/&#xD;
 Original Project GitHub: https://github.com/uvdesk/community-skeleton/&#xD;
 Template GitHub: https://github.com/untraceablez/uvdesk-unraid/</Overview>
-  <Category>Productivity: Tools: Status:Beta</Category>
+  <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:6744]</WebUI>
   <TemplateURL/>
   <Icon>https://yt3.googleusercontent.com/ytc/AL5GRJUffl2H80R11YincESU0WpqXTBIHekmY_B6cRN6Ng=s900-c-k-c0x00ffffff-no-rj</Icon>
