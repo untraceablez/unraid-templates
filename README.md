@@ -68,7 +68,8 @@ mysql>
 
 ##### Creating the User
 
-Now we can create the user (uvdesk by default): 
+Now we can create the user (uvdesk by default):   
+
 `CREATE USER 'uvdesk'@'localhost' IDENTIFIED BY 'SUPERSECUREPASSWORDHERE';`
 
 You should see this output:
