@@ -17,26 +17,25 @@ Website: https://www.uvdesk.com/en/&#xD;
 Original Project GitHub: https://github.com/uvdesk/community-skeleton/&#xD;
 Template GitHub: https://github.com/untraceablez/uvdesk-unraid/</Overview>
   <Category>Productivity: Tools: Status:Beta</Category>
-  <WebUI>http://[IP]:[PORT]</WebUI>
+  <WebUI>http://[IP]:[PORT:6744]</WebUI>
   <TemplateURL/>
   <Icon>https://yt3.googleusercontent.com/ytc/AL5GRJUffl2H80R11YincESU0WpqXTBIHekmY_B6cRN6Ng=s900-c-k-c0x00ffffff-no-rj</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1681232472</DateInstalled>
+  <DateInstalled>1681247044</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="webUI Port" Target="80" Default="6744" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6744</Config>
-  <Config Name="Config directory" Target="/app_data" Default="/mnt/user/appdata/uvdesk" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/uvdesk</Config>
+  <Config Name="Config directory" Target="/app" Default="/mnt/user/appdata/uvdesk" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/uvdesk</Config>
   <Config Name="mySQL Host" Target="MYSQL_HOST" Default="[IP]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">10.0.0.29</Config>
   <Config Name="mySQL Host Port" Target="MYSQL_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">3309</Config>
   <Config Name="mySQL User" Target="MYSQL_USER" Default="uvdesk" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">uvdesk</Config>
   <Config Name="mySQL Password" Target="MYSQL_PASSWORD" Default="whateveryoumadethepassworddude" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">ue4KhgtnjCTQrEaB8@JxUfQ9</Config>
   <Config Name="mySQL Root Password" Target="MYSQL_ROOT_PASSWORD" Default="yourmysqlrootpassword" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">GCCXXfVo8ocbAAQB</Config>
   <Config Name="Server FQDN" Target="ServerName" Default="https://youripordomainname.here" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://help.smaugstrove.live</Config>
-  <Config Name="APP_ENV" Target="APP_ENV" Default="dev" Mode="" Description="Puts app in development or production mode." Type="Variable" Display="always" Required="false" Mask="false">dev</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="dev" Mode="" Description="Puts app in development or production mode.&#13;&#10;dev = development mode&#13;&#10;prod = production mode" Type="Variable" Display="always" Required="true" Mask="false">dev</Config>
   <Config Name="APP_SECRET" Target="APP_SECRET" Default="36d362127cb3e4d4982ce4cf6b716ddc53c5299c" Mode="" Description="The App Secret, set this to any random string, personally I like to hash a phrase into SHA1 and use that." Type="Variable" Display="always" Required="false" Mask="false">36d362127cb3e4d4982ce4cf6b716ddc53c5299c</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Your timezone." Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
   <Config Name="App Currency" Target="APP_CURRENCY" Default="USD" Mode="" Description="Currency value to use if you plan on CMS support." Type="Variable" Display="always" Required="false" Mask="false">USD</Config>
