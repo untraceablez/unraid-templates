@@ -1,3 +1,5 @@
+![UV Desk Logo](https://camo.githubusercontent.com/d89169b78aa91f0bd1842160d0530b37ec5c767b27d7f1e3fbdcd636fb85ddd7/68747470733a2f2f73332d61702d736f757468656173742d312e616d617a6f6e6177732e636f6d2f63646e2e75766465736b2e636f6d2f75766465736b2f62756e646c65732f7765626b756c64656661756c742f696d616765732f75766465736b2d776964652e737667)
+
 # uvdesk-unraid
 
 ## Table of Contents
@@ -120,7 +122,8 @@ Lastly, we need to give our `uvdesk` user all privileges on the uvdesk database:
 
 `GRANT ALL PRIVILEGES ON uvdesk.* TO 'uvdesk'@'localhost' IDENTIFIED BY 'SUPERSECUREPASSWORDHERE';`
 
-Once last time, you should see this output:
+Once last time, you should see this output:  
+
 `Query OK, 1 rows affected (0.01 sec)`
 
 You've now done all the work you'll need to do in mySQL, you can exit the pop-up window or leave by typing `exit`. 
