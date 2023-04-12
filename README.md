@@ -127,10 +127,20 @@ You've now done all the work you'll need to do in mySQL, you can exit the pop-up
 
 #### Installing uvdesk from Community Applications
 
+To install uvdesk from Community Applications, simply navigate to Community Apps and head to either **Productivity** or **Tools**, or just search `uvdesk`, you should see it in the results like this: 
+
+![community-apps](community-apps.png)
+
 #### Accessing UVDesk &  First-Time Setup
 
+##### Configuring the Container
+When you get to the container configuration page in unRAID, make sure to fill in all of your details regarding your mySQL instance, as well as your intended domain name for your instance (eg. help.mydomain.com). You will also need to generate an app secret, any 32 character randomized string will do. Lastly, make sure to set the timezone and currency to your local ones. 
+
+##### Accessing the webUI
+After that, just hit apply and when you navigate to your domain name or http://SERVERIP:6744 you'll be presented with the Setup Wizard. You'll need to type the same mySQL info, and then create an admin user. After that, start exploring! 
 
 
 ## Acknowledgements
 
 Thanks to @MountainGod on the IBRACORP Discord for some help with the environment flags. 
+Thanks just to the overall unRAID community, it's a blast to finally contribute something back!
